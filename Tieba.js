@@ -37,13 +37,15 @@ function discuss(){
         parent = parent[0].parentNode;
         parent.remove();
         //楼层广告
-        for(var i = 0;i<40;i++)
+        for(var i = 0;i<40;i++){
             if(document.getElementById("mediago-tb-pb-list-" + i)){
                 document.getElementById("mediago-tb-pb-list-" + i).remove();
-        }
-        for(var i = 0;i<40;i++)
+            }
+        }i=0;
+        for(;i<40;i++){
             if(document.getElementsByClassName("fengchao-wrap-box")[i]){
                 document.getElementsByClassName("fengchao-wrap-box")[i].remove();
+            }
         }
         //上端广告
         document.getElementById("banner_pb_customize").remove();
@@ -53,7 +55,6 @@ function discuss(){
 
 //吧
 function bar(){
-   
     setTimeout(() => {
         //右侧广告
         let j = 0;//反死循环
@@ -65,9 +66,10 @@ function bar(){
         parent = parent[0].parentNode;
         parent.remove();
         //帖子广告
-        for(var i = 0;i<50;i++)
+        for(var i = 0;i<50;i++){
             if(document.getElementById("mediago-tb-frs-list-" + i)){
                 document.getElementById("mediago-tb-frs-list-" + i).remove();
+            }
         }
     }, 2000);
 

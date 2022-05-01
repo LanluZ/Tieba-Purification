@@ -4,14 +4,15 @@
 // @version      1.0.0
 // @supportURL   https://github.com/LanluZ/Tieba-Purification
 // @homepageURL  https://github.com/LanluZ/Tieba-Purification
-// @description  Tieba Purification
+// @description  百度贴吧广告净化
 // @author       LanluZ
 // @match        https://tieba.baidu.com/*
 // @grant        unsafeWindow
+// @license      GNU GPLv3
 // ==/UserScript==
-
+ 
 var url=window.location.href;
-
+ 
 //主页
 function index(){
     //去除广告
@@ -22,10 +23,10 @@ function index(){
     //左侧我的游戏
     document.getElementById("spage_game_tab_wrapper").remove();
 }
-
+ 
 //帖子
 function discuss(){
-
+ 
     setTimeout(() => {
         //右侧广告
         let j = 0;
@@ -51,9 +52,9 @@ function discuss(){
         //上端广告
         document.getElementById("banner_pb_customize").remove();
     }, 1500);
-
+ 
 }
-
+ 
 //吧
 function bar(){
     setTimeout(() => {
@@ -73,26 +74,26 @@ function bar(){
             }
         }
     }, 1500);
-
+ 
 }
-
+ 
 (function() {
     'use strict';
-
+ 
     switch(url){
-
+ 
         case "https://tieba.baidu.com/index.html":
             index();
         break;
-
+ 
         case "https://tieba.baidu.com/":
             index();
         break
-
+ 
         case "https://tieba.baidu.com/p/" + url.slice("https://tieba.baidu.com/p/".length):
             discuss();
         break;
-
+ 
         case "https://tieba.baidu.com/f?kw" + url.slice("https://tieba.baidu.com/f?kw".length):
             bar();
         break;

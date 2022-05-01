@@ -7,4 +7,5 @@
 ## 一键安装
 
 |github|jsdelivr|github-do|
+|---|---|---|
 |[安装](https://github.com/LanluZ/Tieba-Purification/blob/main/Tieba.js)|[安装](https://cdn.jsdelivr.net/gh/LanluZ/Tieba-Purification/Tieba.js)|[安装](https://github-do.panbaidu.cn/https://raw.githubusercontent.com/LanluZ/Tieba-Purification/main/Tieba.js)|

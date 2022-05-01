@@ -2,6 +2,8 @@
 // @name         Tieba Purification
 // @namespace    http://tampermonkey.net/
 // @version      1.0.0
+// @supportURL   https://github.com/LanluZ/Tieba-Purification
+// @homepageURL  https://github.com/LanluZ/Tieba-Purification
 // @description  Tieba Purification
 // @author       LanluZ
 // @match        https://tieba.baidu.com/*

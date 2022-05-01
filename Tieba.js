@@ -37,19 +37,20 @@ function discuss(){
         parent = parent[0].parentNode;
         parent.remove();
         //楼层广告
-        for(var i = 0;i<40;i++){
+        var i;
+        for(i = 0;i<40;i++){
             if(document.getElementById("mediago-tb-pb-list-" + i)){
                 document.getElementById("mediago-tb-pb-list-" + i).remove();
             }
-        }i=0;
-        for(;i<40;i++){
+        }
+        for(i = 0;i<40;i++){
             if(document.getElementsByClassName("fengchao-wrap-box")[i]){
                 document.getElementsByClassName("fengchao-wrap-box")[i].remove();
             }
         }
         //上端广告
         document.getElementById("banner_pb_customize").remove();
-    }, 2000);
+    }, 1500);
 
 }
 
@@ -71,7 +72,7 @@ function bar(){
                 document.getElementById("mediago-tb-frs-list-" + i).remove();
             }
         }
-    }, 2000);
+    }, 1500);
 
 }
 
